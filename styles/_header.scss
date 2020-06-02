@@ -11,14 +11,17 @@ header {
   width: 100%;
   height: 44px;
   top: 0;
-  padding: 10px 5%;
   display: flex;
   justify-content: space-between;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
+  .logo {
+    width: 24px;
+    margin: 10px 0 0 16px;
+  }
 
   nav {
     .menu {
-        padding-top: 7px;
+        margin: 16px 19px 0 0;
       ul {
         width: 100%;
         position: absolute;
@@ -27,82 +30,93 @@ header {
         overflow: hidden;
         list-style: none;
         background: #171ae7;
-        height: 0px;
-        transition: height 0.5s ease;
+        max-height: 0px;
+        //display: none;
+        transition: all 0.5s ease;
+      
 
         li {
           position: relative;
-            a{
-                display: block;
-                color:rgb(255, 255, 255);
-                padding: 16px 5%;
-                border-right: 1px solid #aaa;
-                text-decoration: none;
-                line-height: 28px;
-            }
-            a:hover{
-                background-color: rgb(75, 77, 223);
-                color: #fff;
-            }
+          padding:16px 0 8px 16px;
+          
         }
+        
+          a {
+            display: block;
+            color: rgb(255, 255, 255);
+            border-right: 1px solid #aaa;
+            text-decoration: none;
+          }
+        
+          a:hover {
+            color: #00F3BB;
+            text-decoration: line-through;
+          }
+        }
+      
+      input {
+        display: block;
+        height: 32px;
+        opacity: 0;
+        z-index: 2;
+        position: absolute;
+        cursor: pointer;
       }
-        input {
-            display: block;
-            width: 40px;
-            height: 32px;
-            opacity: 0;
-            z-index: 2;
-            position: absolute;
-            cursor: pointer;
-            
-        }
 
-        span {
-            display: block;
-            width: 18px;
-            height: 2px;
-            margin-bottom: 4px;
-            position: relative;
-            background: #000;
-            z-index: 1;
-            transform-origin: 3px 0px;
-            transition: transform 0.5s ease,
-            opacity 0.55s ease;
-            
-        }
+      span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        margin-bottom: 4px;
+        position: relative;
+        background: #000;
+        z-index: 1;
+        transform-origin: 3px 0px;
+        transition: transform 0.5s ease, opacity 0.55s ease;
+      }
     }
   }
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    header {
+        height: 80px;
+      .logo {
+          
+        width: 36px;
+        margin: 22px 0 0 100px;
 
-@media screen and (min-width: 1000px){
-    body{
-    header{
-        nav{
-            .menu{
-                ul{
-                    top:0;
-                    right: 30px;
-                    width: unset;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-end;
-                    background: rgb(255, 255, 255);
-                    li{
-                        a{  
-                            margin-left: 20px;
-                            color: black;
-                            border-right: unset;
-                            padding: 16px;
-                            
-                        }
-                    }
-                }
-                span{
-                   display: none;
-                }
+      }
+      nav {
+        .menu {
+          ul {
+            top: 0;
+            margin:0 100px 0 0;
+            width: unset;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            max-height: 100%;
+            background: rgb(255, 255, 255);
+            li {
+              a {
+                
+                color: black;
+                border-right: unset;
+                padding: 26px 0 26px 48px;
+              }
+
+              a:active{
+                  text-decoration: line-through;
+              }
             }
+          }
+          span {
+            display: none;
+          }
         }
+      }
     }
-}
+  }
 }
