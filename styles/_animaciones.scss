@@ -5,9 +5,9 @@ header{
             input[type="checkbox"]:checked ~ ul {
                 max-height: 250px;
                 transition: all 0.5s ease-in-out;
-                -moz-transition: height 0.5s ease-in-out;
-                -o-transition: height 0.5s ease-in-out;
-                -webkit-transition: height 0.5s ease-in-out;
+                //-moz-transition: height 0.5s ease-in-out;
+                //-o-transition: height 0.5s ease-in-out;
+                //-webkit-transition: height 0.5s ease-in-out;
                 }
                 span:first-child {
                     transform-origin: 0% 0%;

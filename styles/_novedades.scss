@@ -21,14 +21,14 @@
     transform-origin: bottom right;
   }
 
-  .novedades { //no se me centra
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 400px;
-    
+  .novedades {
+    //no se me centra
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
 
     h2 {
       font-family: "IBM Plex Sans";
@@ -42,22 +42,27 @@
     }
 
     button {
-      font-family: "IBM Plex Mono";
-      font-size: 16px;
-      font-weight: 500;
-      color: #060a24;
-      letter-spacing: 0;
       text-align: center;
       line-height: 22px;
       height: 48px;
       width: 288px;
       background-color: #00f3bb;
       transition: 0.3s ease-in;
+      a {
+        font-family: "IBM Plex Mono";
+        font-size: 16px;
+        font-weight: 500;
+        color: #060a24;
+        letter-spacing: 0;
+        text-decoration: none;
+      }
     }
 
     button:hover {
-      color: #ffffff;
       background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+      a {
+        color: #ffffff;
+      }
     }
   }
 }
@@ -67,17 +72,15 @@
     height: 518px;
     padding: unset;
     .novedades {
-       width: 688.90px;
+      width: 688.9px;
       h2 {
         font-size: 48px;
         margin-bottom: 36px;
       }
-      button{
+      button {
         position: relative;
         width: 345px;
         height: 56px;
-        
-        
       }
     }
   }

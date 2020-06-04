@@ -7,59 +7,64 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-header {
-  width: 100%;
-  height: 44px;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  font-family: "IBM Plex Mono", monospace; }
-  header .logo {
-    width: 24px;
-    margin: 10px 0 0 16px; }
-  header nav .menu {
-    margin: 16px 19px 0 0; }
-    header nav .menu ul {
-      width: 100%;
-      position: absolute;
-      top: 45px;
-      right: 0;
-      overflow: hidden;
-      list-style: none;
-      background: #171ae7;
-      max-height: 0px;
-      transition: all 0.5s ease;
-      margin-bottom: 16px; }
-      header nav .menu ul #topicos {
-        padding-bottom: 16px; }
-      header nav .menu ul li {
+body {
+  background: #ffffff; }
+  body header {
+    width: 100%;
+    height: 44px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: "IBM Plex Mono", monospace; }
+    body header .logo {
+      width: 24px;
+      margin: 10px 0 0 16px; }
+    body header nav .menu {
+      margin: 16px 19px 0 0; }
+      body header nav .menu ul {
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        overflow: hidden;
+        list-style: none;
+        background: #171ae7;
+        max-height: 0px;
+        transition: all 0.5s ease;
+        margin-bottom: 16px; }
+        body header nav .menu ul #topicos {
+          padding-bottom: 16px; }
+        body header nav .menu ul li {
+          position: relative;
+          padding: 16px 0 8px 16px; }
+          body header nav .menu ul li a {
+            display: block;
+            color: white;
+            border-right: 1px solid #aaa;
+            text-decoration: none; }
+          body header nav .menu ul li a:hover {
+            color: #00f3bb;
+            text-decoration: line-through; }
+          body header nav .menu ul li a:active {
+            color: #000;
+            text-decoration: line-through; }
+      body header nav .menu input {
+        display: block;
+        height: 32px;
+        opacity: 0;
+        z-index: 2;
+        position: absolute;
+        cursor: pointer; }
+      body header nav .menu span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        margin-bottom: 4px;
         position: relative;
-        padding: 16px 0 8px 16px; }
-        header nav .menu ul li a {
-          display: block;
-          color: white;
-          border-right: 1px solid #aaa;
-          text-decoration: none; }
-        header nav .menu ul li a:hover {
-          color: #00f3bb;
-          text-decoration: line-through; }
-    header nav .menu input {
-      display: block;
-      height: 32px;
-      opacity: 0;
-      z-index: 2;
-      position: absolute;
-      cursor: pointer; }
-    header nav .menu span {
-      display: block;
-      width: 18px;
-      height: 2px;
-      margin-bottom: 4px;
-      position: relative;
-      background: #000;
-      z-index: 1;
-      transform-origin: 3px 0px;
-      transition: transform 0.5s ease, opacity 0.55s ease; }
+        background: #000;
+        z-index: 1;
+        transform-origin: 3px 0px;
+        transition: transform 0.5s ease, opacity 0.55s ease; }
 
 @media screen and (min-width: 768px) {
   body header {
@@ -88,10 +93,7 @@ header {
       display: none; } }
 header nav .menu input[type="checkbox"]:checked ~ ul {
   max-height: 250px;
-  transition: all 0.5s ease-in-out;
-  -moz-transition: height 0.5s ease-in-out;
-  -o-transition: height 0.5s ease-in-out;
-  -webkit-transition: height 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out; }
 header nav .menu span:first-child {
   transform-origin: 0% 0%; }
 header nav .menu span:nth-last-child(2) {
@@ -129,9 +131,6 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
     letter-spacing: 0;
     line-height: 22px; }
   .tit-sec button {
-    font-family: "IBM Plex Mono";
-    font-size: 16px;
-    font-weight: 500;
     letter-spacing: 0;
     text-align: center;
     line-height: 22px;
@@ -143,12 +142,16 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
     background-color: #00f3bb;
     transition: 0.3s ease-in; }
     .tit-sec button a {
+      font-family: "IBM Plex Mono";
+      font-size: 16px;
+      font-weight: 500;
       width: 100%;
       text-decoration: none;
       color: #060a24; }
   .tit-sec button:hover {
-    color: #ffffff;
     background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%); }
+    .tit-sec button:hover a {
+      color: #ffffff; }
 
 @media (min-width: 768px) {
   .tit-sec {
@@ -159,7 +162,7 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
     .tit-sec h1 {
       font-size: 64px; }
       .tit-sec h1 .punto {
-        color: #0000EC; }
+        color: #0000ec; }
     .tit-sec p {
       margin-right: 612px;
       font-size: 16px; }
@@ -392,27 +395,30 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
       line-height: 42px;
       margin-bottom: 24px; }
     .nov-sec .novedades button {
-      font-family: "IBM Plex Mono";
-      font-size: 16px;
-      font-weight: 500;
-      color: #060a24;
-      letter-spacing: 0;
       text-align: center;
       line-height: 22px;
       height: 48px;
       width: 288px;
       background-color: #00f3bb;
       transition: 0.3s ease-in; }
+      .nov-sec .novedades button a {
+        font-family: "IBM Plex Mono";
+        font-size: 16px;
+        font-weight: 500;
+        color: #060a24;
+        letter-spacing: 0;
+        text-decoration: none; }
     .nov-sec .novedades button:hover {
-      color: #ffffff;
       background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%); }
+      .nov-sec .novedades button:hover a {
+        color: #ffffff; }
 
 @media (min-width: 768px) {
   .nov-sec {
     height: 518px;
     padding: unset; }
     .nov-sec .novedades {
-      width: 688.90px; }
+      width: 688.9px; }
       .nov-sec .novedades h2 {
         font-size: 48px;
         margin-bottom: 36px; }
