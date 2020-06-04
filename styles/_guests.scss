@@ -14,9 +14,25 @@
     .img-con {
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
     }
 
     img {
       width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .invi-sec{
+      h2 {
+        margin: 44px 0 36px 200px;
+        font-size: 48px;
+      }
+
+      .img-con{
+        flex-direction: row;
+        img{
+          width: 33.33%;
+        }
+      }
     }
   }

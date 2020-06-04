@@ -18,11 +18,43 @@ footer{
 
     .info{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 16px;
-        width: 72%;
-        text-decoration: none;
+        width: 80%;
+
+        .media a{
+            display: block;
+            text-decoration: none;
+            color: #060A24;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 28px;
+    
+        }
+        
+        .media a:hover{
+        color: #00F3BB
+        }
 
 
+    }
+  }
+
+  @media ( min-width: 768px ){
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+
+        h5{
+            margin-left: 100px;
+        }
+
+        .info{
+            width: 20%;
+            margin-right: 100px;
+            .media a{
+                font-size: 18px;
+            }
+        }
     }
   }

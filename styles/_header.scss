@@ -21,7 +21,8 @@ header {
 
   nav {
     .menu {
-        margin: 16px 19px 0 0;
+      margin: 16px 19px 0 0;
+
       ul {
         width: 100%;
         position: absolute;
@@ -33,27 +34,31 @@ header {
         max-height: 0px;
         //display: none;
         transition: all 0.5s ease;
-      
+        margin-bottom: 16px;
+
+        #topicos {
+          padding-bottom: 16px;
+        }
 
         li {
           position: relative;
-          padding:16px 0 8px 16px;
-          
-        }
-        
+          padding: 16px 0 8px 16px;
+
           a {
             display: block;
             color: rgb(255, 255, 255);
             border-right: 1px solid #aaa;
             text-decoration: none;
           }
-        
+
           a:hover {
-            color: #00F3BB;
-            text-decoration: line-through;
+            color: #00f3bb;
+            text-decoration: line-through;  
           }
+          
         }
-      
+      }
+
       input {
         display: block;
         height: 32px;
@@ -81,18 +86,16 @@ header {
 @media screen and (min-width: 768px) {
   body {
     header {
-        height: 80px;
+      height: 80px;
       .logo {
-          
         width: 36px;
         margin: 22px 0 0 100px;
-
       }
       nav {
         .menu {
           ul {
             top: 0;
-            margin:0 100px 0 0;
+            margin: 0 100px 0 0;
             width: unset;
             display: flex;
             flex-direction: row;
@@ -100,15 +103,15 @@ header {
             max-height: 100%;
             background: rgb(255, 255, 255);
             li {
+              padding: unset;
               a {
-                
                 color: black;
                 border-right: unset;
                 padding: 26px 0 26px 48px;
               }
 
-              a:active{
-                  text-decoration: line-through;
+              a:active {
+                text-decoration: line-through;
               }
             }
           }
