@@ -42,20 +42,19 @@
     }
 
     button {
+      letter-spacing: 0;
       text-align: center;
       line-height: 22px;
       height: 48px;
       width: 288px;
+      cursor: pointer;
       background-color: #00f3bb;
       transition: 0.3s ease-in;
-      a {
-        font-family: "IBM Plex Mono";
-        font-size: 16px;
-        font-weight: 500;
-        color: #060a24;
-        letter-spacing: 0;
-        text-decoration: none;
-      }
+      font-family: "IBM Plex Mono";
+      font-size: 16px;
+      font-weight: 500;
+      color: #060a24;
+      text-decoration: none;
     }
 
     button:hover {

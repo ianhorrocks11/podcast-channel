@@ -121,7 +121,8 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
     color: #060a24;
     letter-spacing: 0;
     line-height: 42px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    margin-right: 60px; }
     .tit-sec h1 .tachar {
       text-decoration: line-through; }
   .tit-sec p {
@@ -140,14 +141,13 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
     height: 48px;
     width: 288px;
     background-color: #00f3bb;
-    transition: 0.3s ease-in; }
-    .tit-sec button a {
-      font-family: "IBM Plex Mono";
-      font-size: 16px;
-      font-weight: 500;
-      width: 100%;
-      text-decoration: none;
-      color: #060a24; }
+    transition: 0.3s ease-in;
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    text-decoration: none;
+    color: #060a24; }
   .tit-sec button:hover {
     background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%); }
     .tit-sec button:hover a {
@@ -217,24 +217,30 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 
 @media (min-width: 768px) {
   .epis-sec {
-    grid-gap: 50px;
+    grid-gap: 80px;
     height: 950px; }
     .epis-sec iframe {
       width: 86.1%; }
     .epis-sec h2 {
+      position: relative;
       font-size: 48px;
-      margin: 186px 0 26px 200px; }
+      margin: 160px 0 26px 200px;
+      top: 60px; }
     .epis-sec .epi_1 {
+      margin-right: 0px;
       bottom: unset;
       grid-column: 1 / 2; }
     .epis-sec .epi_2 {
+      margin-left: 0px;
       bottom: unset;
       grid-column: 2 / 3; }
     .epis-sec .epi_3 {
+      margin-right: 0px;
       bottom: unset;
       grid-row: 3 / 4;
       grid-column: 1 / 2; }
     .epis-sec .epi_4 {
+      margin-left: 0px;
       bottom: unset;
       grid-row: 3 / 4;
       grid-column: 2 / 3; } }
@@ -332,7 +338,8 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
       font-size: 24px;
       color: #060a24;
       letter-spacing: 0;
-      text-align: center; }
+      text-align: center;
+      padding: 0 10px; }
     .tem-sec .temas .tem1 {
       margin-bottom: 36px; }
     .tem-sec .temas .tem2 {
@@ -395,19 +402,19 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
       line-height: 42px;
       margin-bottom: 24px; }
     .nov-sec .novedades button {
+      letter-spacing: 0;
       text-align: center;
       line-height: 22px;
       height: 48px;
       width: 288px;
+      cursor: pointer;
       background-color: #00f3bb;
-      transition: 0.3s ease-in; }
-      .nov-sec .novedades button a {
-        font-family: "IBM Plex Mono";
-        font-size: 16px;
-        font-weight: 500;
-        color: #060a24;
-        letter-spacing: 0;
-        text-decoration: none; }
+      transition: 0.3s ease-in;
+      font-family: "IBM Plex Mono";
+      font-size: 16px;
+      font-weight: 500;
+      color: #060a24;
+      text-decoration: none; }
     .nov-sec .novedades button:hover {
       background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%); }
       .nov-sec .novedades button:hover a {
@@ -438,7 +445,7 @@ footer {
     font-family: "IBM Plex Mono";
     font-weight: 400;
     font-size: 14px;
-    color: #060A24;
+    color: #060a24;
     letter-spacing: 0;
     line-height: 22px; }
   footer .info {
@@ -447,14 +454,15 @@ footer {
     margin-top: 16px;
     width: 80%; }
     footer .info .media a {
-      display: block;
       text-decoration: none;
-      color: #060A24;
+      color: #060a24; }
+    footer .info .media a i {
       font-size: 16px;
+      line-height: 28px;
       letter-spacing: 0;
-      line-height: 28px; }
+      padding: 0 20px 0 20px; }
     footer .info .media a:hover {
-      color: #00F3BB; }
+      color: #00f3bb; }
 
 @media (min-width: 768px) {
   footer {
@@ -465,8 +473,9 @@ footer {
     footer .info {
       width: 20%;
       margin-right: 100px; }
-      footer .info .media a {
-        font-size: 18px; } }
+      footer .info .media a i {
+        font-size: 18px;
+        padding: 0 0 0 0; } }
 body {
   width: 100%; }
 

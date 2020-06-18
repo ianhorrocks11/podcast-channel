@@ -40,22 +40,23 @@
 
 @media (min-width: 768px) {
   .phone-sec {
-    flex-direction: row; 
-    img{ //el fono se ve como mas ancho
+    flex-direction: row;
+    img {
+      //el fono se ve como mas ancho
       margin-top: unset;
       height: 660px;
       width: 457.6px;
       bottom: 20px;
     }
-    .nosotros-txt{
+    .nosotros-txt {
       width: 464px;
       margin-left: 62.4px;
 
-      h2{
+      h2 {
         font-size: 48px;
         width: 399px;
       }
-      p{
+      p {
         font-size: 16px;
         margin-top: 24px;
         line-height: 24px;

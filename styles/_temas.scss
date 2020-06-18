@@ -1,70 +1,70 @@
 .tem-sec {
-    margin: 48px 16px 42px 16px;
+  margin: 48px 16px 42px 16px;
+  h2 {
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    font-size: 36px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  .temas {
+    margin: 24px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .img-tem-sec {
+      img {
+        margin: 13px 108px 13px 108px;
+      }
+      h3 {
+        font-family: "IBM Plex Sans";
+        font-weight: 600;
+        font-size: 24px;
+        color: #060a24;
+        letter-spacing: 0;
+        text-align: center;
+        padding: 0 10px;
+      }
+    }
+    .tem1 {
+      margin-bottom: 36px;
+    }
+    .tem2 {
+      margin-bottom: 52px;
+    }
+    .tem3 {
+      margin-bottom: 52px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .tem-sec {
+    margin: 64px 220px 34px 200px;
     h2 {
-      font-family: "IBM Plex Sans";
-      font-weight: 400;
-      font-size: 36px;
-      color: #060a24;
-      letter-spacing: 0;
-      line-height: 42px;
+      font-size: 48px;
     }
     .temas {
-      margin: 24px 0 0 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      flex-direction: row;
+      align-items: unset;
       .img-tem-sec {
+        width: 260px;
         img {
-          margin: 13px 108px 13px 108px;
-        }
-        h3 {
-          font-family: "IBM Plex Sans";
-          font-weight: 600;
-          font-size: 24px;
-          color: #060a24;
-          letter-spacing: 0;
-          text-align: center;
+          margin: 69px 0px 29px 0px;
         }
       }
       .tem1 {
-        margin-bottom: 36px;
+        margin-bottom: unset;
       }
       .tem2 {
-        margin-bottom: 52px;
+        margin-bottom: unset;
       }
       .tem3 {
-        margin-bottom: 52px;
+        margin-bottom: unset;
       }
     }
   }
-
-  
-  @media (min-width: 768px){
-    .tem-sec{
-      margin: 64px 220px 34px 200px;
-      h2{
-        font-size: 48px;
-      }
-      .temas{
-        flex-direction: row;
-        align-items: unset;
-        .img-tem-sec{
-          width: 260px;
-          img{
-            margin: 69px 0px 29px 0px;
-          }
-        }
-        .tem1 {
-          margin-bottom: unset;
-        }
-        .tem2 {
-          margin-bottom: unset;
-        }
-        .tem3 {
-          margin-bottom: unset;
-        }
-      }
-    }
-  }
+}
