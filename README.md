@@ -1,2 +1,2 @@
 # podcast-channel
-Primer proyecto - Podcast Channel (Acamica)
+First proyect - Podcast Channel (Acamica)
